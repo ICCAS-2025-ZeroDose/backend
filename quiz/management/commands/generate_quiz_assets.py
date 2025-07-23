@@ -68,6 +68,142 @@ QUIZ_TEMPLATES = [
             }
         }
     },
+    {
+        "id": "share_toy",
+        "prompts": {
+            "situation": {
+                "positive": "The first character is holding a shiny, colorful robot toy with blinking eyes and wheels. The robot is clearly active and fun-looking. The second character sits nearby with both hands empty, leaning forward slightly, eyes fixed on the toy with visible interest.",
+                "negative": "no toy, both characters smiling together, looking elsewhere, holding hands"
+            },
+            "correct": {
+                "positive": "The first character gently offers the robot toy to the second character with a warm smile. The second character takes it with both hands and beams with joy. Now they are sitting together and playing cooperatively.",
+                "negative": "still alone, holding toy tightly, ignoring each other, no interaction"
+            },
+            "incorrect": {
+                "positive": "The first character grips the robot tightly in both arms and turns away protectively. The second character sits with visibly empty hands in their lap, looking down sadly. The distance between them is emphasized.",
+                "negative": "smiling together, playing together, toy between them, sharing happily"
+            }
+        }
+    },
+    {
+        "id": "say_sorry",
+        "prompts": {
+            "situation": {
+                "positive": "Two characters are walking directly toward each other and collide at the center of the scene. The first character’s arms have just hit the second character’s shoulder, and the second character is falling backward onto the ground. Their eyes are wide with shock. The impact is clear, and their body language shows surprise and imbalance.",
+                "negative": "no collision, walking side-by-side, holding hands, smiling or laughing"
+            },
+            "correct": {
+                "positive": "The first character stands with a slightly hunched posture, head bowed in apology. The second character remains sitting on the ground, looking up. The first character's hands are together in front or slightly out, clearly expressing a sorry gesture. Their facial expressions show sincerity and emotional connection.",
+                "negative": "both standing, no apology pose, smiling, ignoring, both on ground"
+            },
+            "incorrect": {
+                "positive": "The second character is still sitting on the ground, crying with their head buried in their arms. The first character has turned around and is walking away into the distance, clearly facing away. The physical gap is wide, and there is no eye contact. The emotion is cold and disconnected.",
+                "negative": "helping hand offered, looking back, standing close, interacting"
+            }
+        }
+    },
+    {
+        "id": "respond_to_greeting",
+        "prompts": {
+            "situation": {
+                "positive": "Two characters are standing face-to-face on a bright outdoor sidewalk in front of a school building. The first character is smiling and waving with their right hand. The second character is standing still and looking at the first character with a neutral expression. Their feet are about one step apart. The sunlight creates soft shadows.",
+                "negative": "hugging, angry face, walking away, no waving, sitting, indoors, third character"
+            },
+            "correct": {
+                "positive": "Both characters are smiling and waving at each other with one hand. Their faces are friendly and bright. The posture of both characters is open and welcoming, standing face-to-face.",
+                "negative": "ignoring, turning away, sad expressions, no waving, angry, walking apart"
+            },
+            "incorrect": {
+                "positive": "The first character is smiling and waving with one hand. The second character has an angry face and is physically pushing or shoving the first character. The mood is tense and confrontational. The first character looks surprised or sad.",
+                "negative": "waving back, smiling together, peaceful scene, friendly interaction, standing calmly"
+            }
+        }
+    },
+    {
+        "id": "quiet_in_library",
+        "prompts": {
+            "situation": {
+                "positive": "The first and second characters are seated at a wooden library table. Each has an open book in front of them. They are quietly reading with their heads slightly bowed and calm facial expressions. Bookshelves fill the background, and the room has a peaceful, quiet atmosphere.",
+                "negative": "talking loudly, standing up, no books, toys on table, laughter, running"
+            },
+            "correct": {
+                "positive": "The second character is softly whispering to the first character while pointing at a page in their book. Both characters are seated and focused, with relaxed postures and gentle expressions, showing respectful behavior in the quiet library.",
+                "negative": "wide open mouths, shouting, laughter, standing, no books, third character present"
+            },
+            "incorrect": {
+                "positive": "The first character is standing on their chair and shouting with their mouth wide open. The second character looks surprised or uncomfortable. A few books have fallen onto the floor, disrupting the quiet library atmosphere.",
+                "negative": "both seated, reading calmly, whispering, soft lighting, peaceful, third character"
+            }
+        }
+    },
+    {
+        "id": "thank_you",
+        "prompts": {
+            "situation": {
+                "positive": "The first character is holding out a large chocolate chip cookie with both hands, offering it to the second character. The second character is facing the first character with wide eyes, showing surprise. They are standing in a neutral, indoor setting like a classroom or playroom.",
+                "negative": "no cookie, already smiling, hugging, sitting, ignoring, blurry hands"
+            },
+            "correct": {
+                "positive": "The second character receives the cookie with both hands while smiling brightly. The first character is also smiling. Their eye contact shows positive connection. The moment is warm, friendly, and peaceful.",
+                "negative": "angry faces, no cookie, walking away, sad expressions, dropped cookie"
+            },
+            "incorrect": {
+                "positive": "The second character looks very angry and throws the cookie on the floor. The first character looks shocked or hurt. The cookie is mid-air or on the ground. The atmosphere is clearly negative and emotionally tense.",
+                "negative": "smiling, saying thank you, receiving cookie, holding it gently, eye contact"
+            }
+        }
+    },
+    {
+        "id": "help_carry_items",
+        "prompts": {
+            "situation": {
+                "positive": "In a bright indoor hallway, the second character is struggling to carry a tall stack of books and toys. Their arms are full, and the items look unstable. The first character is nearby, watching with a neutral expression, standing with empty hands. Both characters are in casual clothes appropriate for school or daycare.",
+                "negative": "helping, no items, only one character, happy, smiling together, standing side-by-side"
+            },
+            "correct": {
+                "positive": "The first character is reaching out with both hands to help the second character carry the tall stack of books and toys. The second character looks visibly relieved and is smiling. The hallway is bright, and both characters appear engaged in helping.",
+                "negative": "one character, ignoring, struggling alone, dropping items, sad, angry expressions"
+            },
+            "incorrect": {
+                "positive": "The first character is walking away with their hands in their pockets or playing with a toy, clearly ignoring the second character who is still struggling with the heavy stack. The second character’s face shows clear discomfort or frustration.",
+                "negative": "helping hand, standing close, smiling at each other, cooperative posture, making eye contact"
+            }
+        }
+    },
+    {
+        "id": "clean_up_after_play",
+        "prompts": {
+            "situation": {
+                "positive": "A playroom scene with many colorful toys scattered on the floor—blocks, stuffed animals, and toy cars. The first and second characters are sitting or kneeling among the toys. They are looking at the mess with calm or thoughtful expressions, preparing to clean up together. Storage bins and shelves are visible in the background.",
+                "negative": "cleaned room, empty floor, toys already in bins, only one character, playing, not looking at toys"
+            },
+            "correct": {
+                "positive": "Both the first and second characters are cleaning up toys together. One is picking up toy blocks and placing them in a plastic storage bin, while the other is gathering stuffed animals from the floor. Their facial expressions are positive—focused or slightly smiling. The room still has some scattered toys, showing active cleanup.",
+                "negative": "toys still everywhere, only one character cleaning, ignoring toys, fighting, sad or angry expressions"
+            },
+            "incorrect": {
+                "positive": "The second character is walking away from the messy floor with their hands in their pockets. The first character is cleaning up alone, looking tired or disappointed. Toys are still scattered everywhere, and the second character shows no interest in helping.",
+                "negative": "helping, smiling together, both characters cleaning, no toys left on the floor, teamwork, cooperative posture"
+            }
+        }
+    },
+    {
+        "id": "react_to_accident",
+        "prompts": {
+            "situation": {
+                "positive": "The first character accidentally spills a cup of water onto the second character’s clothes. The spill is visible on the second character’s shirt or pants. The first character looks surprised and a little worried. The setting is a classroom or indoor playroom with bright lighting.",
+                "negative": "already angry, dry clothes, food spill, only one character, smiling, laughing"
+            },
+            "correct": {
+                "positive": "The second character calmly picks up a nearby towel or tissue and gently wipes the spilled water off their clothes. Their face looks composed, with no sign of anger. The first character is still standing nearby, looking relieved or thankful. The mood is calm and cooperative.",
+                "negative": "angry face, shouting, splashing, walking away, hands up, blaming gestures"
+            },
+            "incorrect": {
+                "positive": "The second character jumps up and yells at the first character, pointing at their wet clothes with an angry expression. The first character looks scared or confused. The scene is tense, and there is no sign of resolution.",
+                "negative": "smiling, wiping calmly, friendly posture, relaxed, helping behavior"
+            }
+        }
+    },
 ]
 
 def _validate_image_with_prompt(prompt, image_data_bytes):
@@ -116,9 +252,10 @@ def _generate_and_upload_one_image(prompt, s3_key_prefix, negative_prompt=None):
 CHARACTER_PAIRS = [
     ["a cute fluffy bunny", "a kind brown bear"],
     ["a playful puppy with floppy ears", "a tiny kitten with big blue eyes"],
-    ["a cheerful ladybug with big green eyes", "a curious little squirrel"],
+    ["a clever orange fox with a bushy tail", "a curious little squirrel"],
     ["a sleepy panda cub", "a brave little lion cub"],
-    ["a friendly giraffe with long eyelashes", "a small, happy elephant"],
+    ["a baby penguin with fluffy gray feathers and tiny orange feet", 
+ "a gentle white lamb with soft wool and big round eyes"],
 ]
 
 
